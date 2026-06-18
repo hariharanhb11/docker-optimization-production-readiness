@@ -5,7 +5,7 @@ FROM node:20-alpine AS builder
 
 WORKDIR /app
 
-# Install dependencies first (better cache usage)
+# Install dependencies first 
 COPY app/package*.json ./
 RUN npm ci
 
